@@ -5,4 +5,4 @@ yum install -y nginx
 cp -f /vagrant/nginx.conf /etc/nginx/
 mkdir -p /var/www/html
 cp /vagrant/index.html /var/www/html/
-nginx
+systemctl start nginx.service
