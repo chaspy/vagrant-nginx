@@ -6,7 +6,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define :n do | n |
     n.vm.hostname = "nginx"
     n.vm.network :private_network, ip: "192.168.33.100"#, virtualbox__intnet: "intnet"
-    n.vm.provision :shell, :path => "./nginx.sh",:privileged   => true
+    n.vm.provision :shell, :path => "./init.sh",:privileged   => true
   end
   
 end
