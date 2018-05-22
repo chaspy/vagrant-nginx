@@ -37,6 +37,7 @@ echo "export PATH=/usr/local/nginx/:$PATH" >> /etc/profile.d/nginx.sh
 source /etc/profile
 
 cp -f /vagrant/nginx.conf /usr/local/nginx/conf/
+cp -f /vagrant/fizzbuzz.rb /usr/local/nginx/conf/
 mkdir -p /var/www/html
 mkdir -p /var/log/nginx
 cp /vagrant/*.html /var/www/html/
