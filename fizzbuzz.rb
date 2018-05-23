@@ -11,4 +11,4 @@ else
     ans = n
 end
 
-Nginx.rputs(ans)
+Nginx.echo(ans)
